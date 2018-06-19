@@ -1,35 +1,22 @@
-<?php
-$method = $_SERVER['REQUEST_METHOD'];
-if(method == "POST"){
-	$requestBody = file_get_contents('php://input');
-	$json = json_decode($requestBody);
+<!DOCTYPE html>
+<html>
+<body>
 
-	$text =$json->result->parameters->text;
-	switch ($text) {
-		case 'hi':
-			$speach="hi......."
-			# code...
-			break;
-		case 'bye':
-			$speach="bye...."
-			# code...
-			break;
-		
-		default:
-			# code...
-			break;
-	}
+<h2>An Unordered HTML List</h2>
 
-	
-	$response= new \stdClass();
-	$response->speach="";
-	$response->displayText="";
-	$response->source="webhook";
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
 
-	echo json_encode($response);
+<h2>An Ordered HTML List</h2>
 
-}else{
-	echo "method not allowed";
-}
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
 
-?>
+</body>
+</html>
