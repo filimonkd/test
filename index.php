@@ -1,5 +1,3 @@
-uld be on the same server from which you wish to run the Telegram Bot
-
 <html>
 
 <head>
