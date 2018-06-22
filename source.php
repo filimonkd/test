@@ -9,8 +9,8 @@ $text=$message["text"];
 $cid=$update["message"]["from"]["id"];
 $from = $message["from"];
 $username = $from["username"];
-$name= $from["name"];
-$cogname = $from["cogname"];
+$nome= $from["first_name"];
+$cogname = $from["last_name"];
 
 
 function apiRequest($metodo)
