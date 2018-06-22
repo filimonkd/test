@@ -9,8 +9,8 @@ $text=$message["text"];
 $cid=$update["message"]["from"]["id"];
 $from = $message["from"];
 $username = $from["username"];
-$name= $from["first_name"];
-$cogname = $from["last_name"];
+$name= $from["name"];
+$cogname = $from["cogname"];
 
 
 function apiRequest($metodo)
@@ -25,13 +25,13 @@ function send($id,$text)
 	}
 	return apiRequest("sendMessage?text=$text&parse_mode=HTML&chat_id=$id");
 }
-// function keyboard($tasti,$text,$cd){
-// $tasti2=$tasti;
+function keyboard($tasti,$text,$cd){
+$tasti2=$tasti;
 
-// $tasti3=json_encode($tasti2);
-// 	if(strpos($text,"\n")){
-// 		$text= urlencode($text);
-// 	}
-// apiRequest("sendMessage?text=$text&parse_mode=Markdown&chat_id=$cd&reply_markup=$tasti3");
-// }
+$tasti3=json_encode($tasti2);
+	if(strpos($text,"\n")){
+		$text= urlencode($text);
+	}
+apiRequest("sendMessage?text=$text&parse_mode=Markdown&chat_id=$cd&reply_markup=$tasti3");
+}
 ?>
