@@ -9,7 +9,7 @@ $text=$message["text"];
 $cid=$update["message"]["from"]["id"];
 $from = $message["from"];
 $username = $from["username"];
-$nome= $from["first_name"];
+$name= $from["first_name"];
 $cogname = $from["last_name"];
 
 
