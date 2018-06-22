@@ -32,6 +32,6 @@ $tasti3=json_encode($tasti2);
 	if(strpos($text,"\n")){
 		$text= urlencode($text);
 	}
-apiRequest("sendMessage?text=$text&parse_mode=Markdown&chat_id=$cd&reply_markup=$tasti3");
+	return apiRequest("sendMessage?text=$text&parse_mode=Markdown&chat_id=$cd&reply_markup=$tasti3");
 }
 ?>
