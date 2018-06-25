@@ -7,7 +7,6 @@
 		$keyboard =]
 			["filla1","fillla2"],
 			["fillaa3","fillla4"],
-			["fillaa3"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
