@@ -6,7 +6,7 @@
 	   //@$username $name $cogname
 		
 	}
-	if ($test=="test") {
+	if ($text=="test") {
 		$keyboard =]
 			["filla1","fillla2"],
 			["fillaa3","fillla4"],
