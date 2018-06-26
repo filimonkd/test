@@ -22,4 +22,9 @@
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
+	if ($text=="Inline3") {
+		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
+		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
 ?>
