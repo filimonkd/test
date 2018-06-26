@@ -9,8 +9,15 @@ $text=$message["text"];
 $cid=$update["message"]["from"]["id"];
 $from = $message["from"];
 $username = $from["username"];
-$name= $from["name"];
-$cogname = $from["cogname"];
+$name= $from["first_name"];
+$cogname = $from["last_name"];
+$cbid=$update["callback_query"]["from"]["id"];
+$cbdata=$update["callback_query"]["data"];
+
+
+function callback($up){
+	return up["callback_query"];
+}
 
 
 function apiRequest($metodo)
@@ -39,7 +46,7 @@ function inlinekeyboard($menud,$chat,$text){
 	if(strpos($text,"\n")){
 		$text= urlencode($text);
 	}
-	$d2=array(
+	$d2=array(	
 		"inline_keyboard" => $menu,);
 	$d2=json_encode($d2);
 	return apiRequest("sendMessage?chat_id=$chat&parse_mode=Markdown&text=$text&reply_markup=$d2");
