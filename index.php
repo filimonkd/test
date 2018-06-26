@@ -27,4 +27,14 @@
 		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
+	if ($text=="Inline4") {
+		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if (callback($update)) {
+		if ($cbdata=="ccccc") {
+			send($cbid,"test sss");
+		}
+	}
+
 ?>
