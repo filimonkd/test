@@ -30,4 +30,15 @@ $tasti3=json_encode($tasti2);
 	}
 apiRequest("sendMessage?text=$text&parse_mode=Markdown&chat_id=$cd&reply_markup=$tasti3");
 }
+function inlinekeyboard($menud,$chat,$text){
+	$menu=$menud;
+	if(strpos($text,"\n")){
+		$text= urlencode($text);
+	}
+	$d2=array(	
+		"inline_keyboard" => $menu,);
+	$d2=json_encode($d2);
+	return apiRequest("sendMessage?chat_id=$chat&parse_mode=Markdown&text=$text&reply_markup=$d2");
+
+}
 ?>
