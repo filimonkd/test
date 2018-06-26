@@ -6,11 +6,14 @@
 	}
 	if($text =="test"){
 		$keyboard =[
-			["Inline","Inline2"],
+			["Inline1","Inline2"],
 			["Inline3","Inline4"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
 		keyboard($key,"fila aaaa aaaa",$cid);
+	}
+	if($text =="Inline1"){
+		send($cid,"fila gr8 gr8.....");
 	}
 ?>
