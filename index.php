@@ -14,7 +14,8 @@
 		keyboard($key,"fila aaaa aaaa",$cid);
 	}
 	if($text =="Inline1"){
-		$but=array(array(array("text"=>"btn1","url"="www.google.com"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+// 		$but=array(array(array("text"=>"btn1","url"="www.google.com"),),);
+// 		inlinekeyboard($but,$cid,"click for google.com");
+		send($cid,"fila gr8 gr8.....");
 	}
 ?>
