@@ -29,7 +29,7 @@
 	}
 	if ($text=="Inline4") {
 		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		inlinekeyboard($but,$cid,"back");
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
