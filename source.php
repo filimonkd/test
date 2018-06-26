@@ -7,6 +7,16 @@ $update=json_decode($data,true);
 $message=$update["message"];
 $text=$message["text"];
 $cid=$update["message"]["from"]["id"];
+$from = $message["from"];
+$username = $from["username"];
+$name= $from["first_name"];
+$cogname = $from["last_name"];
+$cbid=$update["callback_query"]["from"]["id"];
+$cbdata=$update["callback_query"]["data"];
+
+function callback($up){
+	return up["callback_query"];
+}
 
 
 function apiRequest($metodo)
