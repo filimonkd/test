@@ -32,7 +32,7 @@
 		inlinekeyboard($but,$cid,"back");
 	}
 	if (callback($update)) {
-		if ($cbdata=="ccccc") {
+		if ($cbdata=="test") {
 			send($cbid,"test1");
 		}
 	}
