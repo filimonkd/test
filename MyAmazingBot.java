@@ -34,6 +34,6 @@ import org.telegram.telegrambots.exceptions.TelegramApiException;
     @Override
     public String getBotToken() {
         // Return bot token from BotFather
-        return "12345:qwertyuiopASDGFHKMK";
+        return "619433200:AAF0Oblwc2gsOgWHZk1NCo01MlRRj7AcgGQ";
     }
 }
