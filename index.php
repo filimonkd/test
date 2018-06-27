@@ -33,11 +33,11 @@
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
-			send($cbid,"test");
+			send($cbid,"test1");
 		}
 	}
-	if($text =="test"){
- 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
+	if($text =="test1"){
+ 		$but=array(array(array("text"=>"btn1","url"=>"www.face.com"),),);
  		inlinekeyboard($but,$cid,"click for google.com");
 		//send($cid,"fila gr8 gr8.....");
 	}
