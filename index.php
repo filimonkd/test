@@ -33,10 +33,13 @@
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
-			//send($cbid,"test sss");
-			$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
-			inlinekeyboard($but,$cid,"click for google.com");
+			send($cbid,"test");
 		}
+	}
+	if($text =="test"){
+ 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
+ 		inlinekeyboard($but,$cid,"click for google.com");
+		//send($cid,"fila gr8 gr8.....");
 	}
 
 ?>
