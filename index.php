@@ -1,5 +1,5 @@
 <?php
-	define('token','602850117:AAFbCgH0FxBbz3gdSVifBiwzUdbIOWCZLDw');
+	define('token','617120851:AAE07VeeVUbkd8LRQ2uF0cJHoQDJ7wW2L7Y');
 	include 'source.php';
 	if($text =="/start"){
 		// send($cid,"hey @$username $name $cogname,wellcome  to fila's bot .....");
