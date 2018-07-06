@@ -1,48 +1,23 @@
 <?php
-	define('token','617120851:AAE07VeeVUbkd8LRQ2uF0cJHoQDJ7wW2L7Y');
-	include 'source.php';
-	if($text =="/start"){
-		// send($cid,"hey @$username $name $cogname,wellcome  to fila's bot .....");
-	   //@$username $name $cogname
-		$keyboard =[
-			["Inline","Inline2"],
-			["Inline3","Inline4"],
-			["fillaa3"],
-		];
-		$key=array("resize_keyboard"=>true,
-					"keyboard"=>$keyboard,);
-		keyboard($key,"fila aaaa aaaa",$cid);
-		
-	}
-	if ($text=="Inline") {
-// 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
-// 		inlinekeyboard($but,$cid,"click for google.com");
-		$keyboard =[
-			["Inline555","Inline2"],
-			["Inline3","Inline4"],
-			["fillaa3"],
-		];
-		$key=array("resize_keyboard"=>true,
-					"keyboard"=>$keyboard,);
-		keyboard($key,"fila aaaa aaaa",$cid);
-	}
-	if ($text=="Inline2") {
-		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
-	}
-	if ($text=="Inline3") {
-		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
-		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
-		inlinekeyboard($but,$cid,"click for google.com");
-	}
-	if ($text=="Inline4") {
-		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
-	}
-	if (callback($update)) {
-		if ($cbdata=="ccccc") {
-			send($cbid,"test sss");
-		}
-	}
-
+$INSTANCE_ID = 'YOUR_INSTANCE_ID_HERE';  // TODO: Replace it with your gateway instance ID here
+$CLIENT_ID = "YOUR_CLIENT_ID_HERE";  // TODO: Replace it with your Premium client ID here
+$CLIENT_SECRET = "YOUR_CLIENT_SECRET_HERE";   // TODO: Replace it with your Premium client secret here
+$postData = array(
+  'number' => '251921059408',  // Specify the recipient's number (NOT the gateway number) here.
+  'message' => 'fila here)'  // FIXME
+);
+$headers = array(
+  'Content-Type: application/json',
+  'X-WM-CLIENT-ID: '.$CLIENT_ID,
+  'X-WM-CLIENT-SECRET: '.$CLIENT_SECRET
+);
+$url = 'http://api.whatsmate.net/v1/telegram/single/message/' . $INSTANCE_ID;
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($postData));
+$response = curl_exec($ch);
+echo "Response: ".$response;
+curl_close($ch);
 ?>
