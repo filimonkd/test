@@ -38,7 +38,7 @@
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
-			send($cbid,"test sss");
+			send_photo($cid);
 		}
 	}
 
