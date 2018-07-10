@@ -38,8 +38,12 @@
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
+			send($cid,"final test");
 			send_photo($cid);
 		}
+	}
+	if($text=="final test"){
+		send_photo($cid);
 	}
 
 ?>
