@@ -15,7 +15,7 @@
 		
 	}
 	if($text =="test"){
-		sendPhoto($cid);
+		send_photo($cid);
 		
 	}
 
