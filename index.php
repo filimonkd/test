@@ -14,6 +14,11 @@
 		keyboard($key,"fila aaaa aaaa",$cid);
 		
 	}
+	if($text =="test"){
+		sendPhoto($cid);
+		
+	}
+
 	if ($text=="Inline") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
