@@ -32,13 +32,10 @@ function send($id,$text)
 	}
 	return apiRequest("sendMessage?text=$text&parse_mode=HTML&chat_id=$id");
 }
-// function send_photo($id,$text)
-// {
-// 	if(strpos($text,"\n")){
-// 		$text= urlencode($text);
-// 	}
-// 	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=");
-// }
+function send_photo($id)
+{
+	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADea4xG4R2IVKUxPXmYx8RfRe1mxoABMmgcenb7lckIuICAAEC");
+}
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
 
