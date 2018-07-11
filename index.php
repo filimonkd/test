@@ -17,6 +17,10 @@
 		send_photo($cid);
 		
 	}
+	if($text =="Pdf"){
+		send_document($cid);
+		
+	}
 
 	if ($text=="Mega-Projects" or $text=="fila") {
 		send($cid,"We have four categories in the Mega projects
@@ -57,8 +61,19 @@
 	}
 	if ($text=="Patents") {
 		$keyboard =[
+			["Patent1","Patent2"],
+			["Patent3","Patent4"],
+			["back"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Choose",$cid);
+	}
+	if ($text=="Patent1" or $text=="Patent2" or $text=="Patent3" or $text=="Patent4") {
+		$keyboard =[
 			["Text","Picture"],
 			["Pdf"],
+			["back"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
