@@ -45,14 +45,31 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Enjoy",$cid);
 	}
+	if ($text=="back") {
+		$keyboard =[
+			["Mega-Projects1","Legal"],
+			["Patents","High-School"],
+			["Stic-Resources"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Enjoy",$cid);
+	}
 	if ($text=="Patents") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
 		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
 	if ($text=="High-School") {
-		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		$keyboard =[
+			["Grade-9","Grade-10"],
+			["Grade-11","Grade12"],
+			["Test"],
+			["back"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Enjoy",$cid);
 	}
 	if ($text=="Stic-Resources") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
