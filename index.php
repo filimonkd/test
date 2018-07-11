@@ -13,7 +13,7 @@
 		keyboard($key,"Enjoy",$cid);
 		
 	}
-	if($text =="test"){
+	if($text =="Picture"){
 		send_photo($cid);
 		
 	}
@@ -26,7 +26,7 @@
 		/Manufacturing-industries
 		Enter the commands or use the buttons below to navigate more");
 		$keyboard =[
-			["construction-Governmental/Private"],
+			["construction_Governmental/Private"],
 			["Energy","infrustracture"],
 			["Manufacturing-industries"],
 			["back"],
@@ -47,18 +47,22 @@
 	}
 	if ($text=="back") {
 		$keyboard =[
-			["Mega-Projects1","Legal"],
+			["Mega-Projects","Legal"],
 			["Patents","High-School"],
 			["Stic-Resources"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Patents") {
-		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
-		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		$keyboard =[
+			["Text","Picture"],
+			["Pdf"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="High-School") {
 		$keyboard =[
