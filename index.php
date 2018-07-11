@@ -33,7 +33,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"",$cid);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Legal") {
 		$keyboard =[
