@@ -36,6 +36,10 @@ function send_photo($id)
 {
 	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADea4xG4R2IVKUxPXmYx8RfRe1mxoABMmgcenb7lckIuICAAEC");
 }
+function send_document($id)
+{
+	return apiRequest("senddocument?chat_id=391941322&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
+}
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
 
