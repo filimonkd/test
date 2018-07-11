@@ -36,8 +36,14 @@
 		keyboard($key,"",$cid);
 	}
 	if ($text=="Legal") {
-		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		$keyboard =[
+			["Mega-Projects","Legal"],
+			["Patents","High-School"],
+			["Stic-Resources"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Enjoy",$cid);
 	}
 	if ($text=="Patents") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
