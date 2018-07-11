@@ -18,9 +18,12 @@
 		
 	}
 
-	if ($text=="Mega-Projects") {
-		send($cid,"We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms
-		We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms");
+	if ($text=="Mega-Projects" or $text=="fila") {
+		send($cid,"We have four categories in the Mega projects
+		/construction Governmental/Private
+		/Energy
+		/infrustracture
+		/Manufacturing industries");
 	}
 	if ($text=="Legal") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
