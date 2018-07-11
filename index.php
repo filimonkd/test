@@ -2,12 +2,11 @@
 	define('token','521684849:AAHvST9tExlgvd3G1ub18E-wOwVP-rV6v0k');
 	include 'source.php';
 	if($text =="/start"){
-		// send($cid,"hey @$username $name $cogname,wellcome  to fila's bot .....");
-	   //@$username $name $cogname
+		 send($cid,"hey @$username $name $cogname,wellcome  to fila's bot .....");
 		$keyboard =[
-			["Inline","Inline2"],
-			["Inline3","Inline4"],
-			["fillaa3"],
+			["Mega-Projects","Legal"],
+			["Patents","High-School"],
+			["Stic-Resources"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
@@ -19,21 +18,26 @@
 		
 	}
 
-	if ($text=="Inline") {
+	if ($text=="Mega-Projects") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Inline2") {
+	if ($text=="Legal") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Inline3") {
+	if ($text=="Patents") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
 		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Inline4") {
+	if ($text=="High-School") {
 		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if ($text=="Stic-Resources") {
+		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
+		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
 	if (callback($update)) {
