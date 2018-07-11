@@ -20,10 +20,20 @@
 
 	if ($text=="Mega-Projects" or $text=="fila") {
 		send($cid,"We have four categories in the Mega projects
-		/construction Governmental/Private
+		/construction-Governmental/Private
 		/Energy
 		/infrustracture
-		/Manufacturing industries");
+		/Manufacturing-industries
+		Enter the commands or use the buttons below to navigate more");
+		$keyboard =[
+			["construction-Governmental/Private"],
+			["Energy","infrustracture"],
+			["Manufacturing-industries"],
+			["back"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"",$cid);
 	}
 	if ($text=="Legal") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
