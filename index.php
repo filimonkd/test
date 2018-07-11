@@ -35,9 +35,9 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"",$cid);
 	}
-	if ($text=="Enjoy") {
+	if ($text=="Legal") {
 		$keyboard =[
-			["Mega-Projects","Legal"],
+			["Mega-Projects123","Legal"],
 			["Patents","High-School"],
 			["Stic-Resources"],
 		];
