@@ -2,7 +2,7 @@
 	define('token','521684849:AAHvST9tExlgvd3G1ub18E-wOwVP-rV6v0k');
 	include 'source.php';
 	if($text =="/start"){
-		 send($cid,"hey @$username $name $cogname,wellcome  to fila's bot .....");
+		 send($cid,"hey @$username $name $cogname,wellcome  to Stic digital library's bot .....");
 		$keyboard =[
 			["Mega-Projects","Legal"],
 			["Patents","High-School"],
@@ -10,7 +10,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"fila aaaa aaaa",$cid);
+		keyboard($key,"Enjoy",$cid);
 		
 	}
 	if($text =="test"){
@@ -19,8 +19,8 @@
 	}
 
 	if ($text=="Mega-Projects") {
-		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		send($cid,"We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms
+		We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms We have jndcn ncjdiklaj hdhncms");
 	}
 	if ($text=="Legal") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
