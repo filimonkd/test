@@ -134,10 +134,20 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Choose",$cid);
 	}
+	if ($text=="Lab Experiment Videos") {
+		$keyboard =[
+			["Biology tut","Maths tut"],
+			["Physics tut","Civics tut"],
+			["home"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Choose",$cid);
+	}
 	if ($text=="Biology" or $text=="Maths" or $text=="Physics" or $text=="Civics") {
 		send_document1($cid);
 	}
-	if ($text=="Lab Experiment Videos") {
+	if ($text=="Biology tut" or $text=="Physics tut" or $text=="Maths tut" or $text=="Civics tut" ) {
 		send_video($cid);
 	}
 	
