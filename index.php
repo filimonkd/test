@@ -47,7 +47,7 @@
 		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="construction" or $text=="construction_Governmental/Private") {
-		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
+		$but=array(array(array("text"=>"Condominum","url"=>"http://library.stic.et/mega-projects/-/categories/682324"),array("text"=>"Private","url"=>"http://library.stic.et/mega-projects/-/categories/682325"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
 	if ($text=="Energy") {
@@ -137,18 +137,18 @@
 	}
 	
 	if ($text=="Stic-Resources") {
-		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
-		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
+		$but[]=array(array("text"=>"Tech-Science Magazines","url"=>"http://library.stic.et/stic-resources/-/document_library/Y9QR0tiVPdYe/view/672697?_com_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe_redirect=http%3A%2F%2Flibrary.stic.et%2Fstic-resources%3Fp_p_id%3Dcom_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview"),);
+		$but[]=array(array("text"=>"STIC Survey","url"=>"http://library.stic.et/stic-resources/-/document_library/Y9QR0tiVPdYe/view/711314?_com_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe_redirect=http%3A%2F%2Flibrary.stic.et%2Fstic-resources%3Fp_p_id%3Dcom_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview"),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if ($text=="Inline4") {
+		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
-			send($cid,"final test");
+			send($cbid,"test sss");
 		}
 	}
-// 	if($text=="final test"){
-// 		send_photo($cid);
-// 	}
-	
 
 ?>
