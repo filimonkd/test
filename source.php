@@ -34,11 +34,15 @@ function send($id,$text)
 }
 function send_photo($id)
 {
-	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADea4xG4R2IVKUxPXmYx8RfRe1mxoABMmgcenb7lckIuICAAEC");
+	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADEa0xG2PBOVLKZVq8cUMessVHoBoABLSnDFqxJ5gpceYAAgI");
 }
 function send_document($id)
 {
 	return apiRequest("senddocument?chat_id=$id&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
+}
+function send_document1($id)
+{
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADyAMAAmPBOVJk9Ycn_5lEEwI");
 }
 function send_video($id)
 {
