@@ -40,14 +40,8 @@
 		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Legal") {
-		$keyboard =[
-			["Mega-Projects123","Legal"],
-			["Patents","High-School"],
-			["Stic-Resources"],
-		];
-		$key=array("resize_keyboard"=>true,
-					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		send_photo($cid);
+		send($cid,"Coming soon...");
 	}
 	if ($text=="back") {
 		$keyboard =[
@@ -90,6 +84,17 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Enjoy",$cid);
 	}
+	if ($text=="Grade-9") {
+		$keyboard =[
+			["Grade-9","Grade-10"],
+			["Grade-11","Grade12"],
+			["test"],
+			["home"],
+		];
+		$key=array("resize_keyboard"=>false,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Enjoy",$cid);
+	}
 	if ($text=="Stic-Resources") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
 		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
@@ -102,6 +107,10 @@
 	}
 	if($text=="final test"){
 		send_photo($cid);
+	}
+	else
+	{
+		send($cid,"you can say anything....");
 	}
 
 ?>
