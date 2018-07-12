@@ -16,7 +16,7 @@
 	if($text =="Picture"){
 		send_photo($cid);
 	}
-	if($text =="picture"){
+	if($text =="Picture "){
 		send_photo1($cid);
 	}
 	if($text =="Pdf"){
@@ -67,7 +67,7 @@
 	}
 	if ($text=="Patent1" or $text=="Patent2" or $text=="Patent3" or $text=="Patent4") {
 		$keyboard =[
-			["Text","Picture"],
+			["Text","Picture "],
 			["Pdf"],
 			["back"],
 		];
