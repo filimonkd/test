@@ -31,10 +31,10 @@
 
 	if ($text=="Mega-Projects" or $text=="fila") {
 		send($cid,"We have four categories in the Mega projects
-		/construction-Governmental/Private
+		/construction - construction Governmental/Private
 		/Energy
 		/infrustracture
-		/Manufacturing-industries
+		/industries - Manufacturing-industries
 		Enter the commands or use the buttons below to navigate more");
 		$keyboard =[
 			["construction_Governmental/Private"],
@@ -46,6 +46,23 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Choose",$cid);
 	}
+	if ($text=="construction" or $text=="construction_Governmental/Private") {
+		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),array("text"=>"btn1","url"=>"www.google.com"),),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if ($text=="Energy") {
+		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
+		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if ($text=="infrustracture") {
+		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
+	if ($text=="Manufacturing-industries" or $text=="industries") {
+		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
+		inlinekeyboard($but,$cid,"click for google.com");
+	}
 	if ($text=="Legal") {
 		send_photo($cid);
 		send($cid,"Coming soon...");
@@ -55,6 +72,7 @@
 			["Mega-Projects","Legal"],
 			["Patents","High-School"],
 			["Stic-Resources"],
+			["TVET"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
@@ -128,9 +146,9 @@
 			send($cid,"final test");
 		}
 	}
-	if($text=="final test"){
-		send_photo($cid);
-	}
+// 	if($text=="final test"){
+// 		send_photo($cid);
+// 	}
 	
 
 ?>
