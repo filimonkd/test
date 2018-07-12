@@ -36,6 +36,10 @@ function send_photo($id)
 {
 	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADEa0xG2PBOVLKZVq8cUMessVHoBoABLSnDFqxJ5gpceYAAgI");
 }
+function send_photo1($id)
+{
+	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=AgADBAADFq0xG2PBOVIEMOpN7GvpGmT3nhoABKDABQ6SVzjdEOwCAAEC");
+}
 function send_document($id)
 {
 	return apiRequest("senddocument?chat_id=$id&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
