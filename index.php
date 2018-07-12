@@ -2,7 +2,7 @@
 	define('token','521684849:AAHvST9tExlgvd3G1ub18E-wOwVP-rV6v0k');
 	include 'source.php';
 	if($text =="/start"){
-		 send($cid,"hey @$username $name $cogname,wellcome  to Stic digital library's bot .....");
+		 send($cid,"hey @$username $name $cogname,welcome  to Stic digital library's bot .....");
 		$keyboard =[
 			["Mega-Projects","Legal"],
 			["Patents","High-School"],
@@ -10,7 +10,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		keyboard($key,"Choose",$cid);
 		
 	}
 	if($text =="Picture"){
