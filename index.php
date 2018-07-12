@@ -40,7 +40,7 @@
 		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Legal") {
-		send_photo($cid);
+		send_video($cid);
 		send($cid,"Coming soon...");
 	}
 	if ($text=="back" or $text=="home") {
@@ -105,7 +105,7 @@
 		keyboard($key,"Enjoy",$cid);
 	}
 	if ($text=="Biology" or $text=="Maths" or $text=="Physics" or $text=="Civics") {
-		send_document($cid);
+		send_document1($cid);
 	}
 	if ($text=="Lab Experiment Videos") {
 		send_video($cid);
