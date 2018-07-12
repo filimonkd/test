@@ -48,7 +48,7 @@
 	}
 	if ($text=="Energy" or $text=="/Energy") {
 		$but=array(array(array("text"=>"Click","callback_data"=>"energy"),),);
-		inlinekeyboard($but,$cid,"We only have one video click to recieve the video");
+		inlinekeyboard($but,$cid,"click");
 	}
 	if (callback($update)) {
 		if ($cbdata=="energy") {
@@ -57,7 +57,7 @@
 			$but[]=array(array("text"=>"Gilgel Gibe","url"=>"www.google.com"),);
 			$but[]=array(array("text"=>"Tulu Mole","url"=>"www.google.com"),);
 			$but[]=array(array("text"=>"Geothermal","url"=>"www.google.com"),);
-			inlinekeyboard($but,$cid,"click for google.com");
+			inlinekeyboard($but,$cbid,"click for google.com");
 		}
 	}
 	if ($text=="infrustracture" or $text=="/infrustracture") {
