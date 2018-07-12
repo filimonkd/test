@@ -43,7 +43,7 @@
 		send_photo($cid);
 		send($cid,"Coming soon...");
 	}
-	if ($text=="back") {
+	if ($text=="back" or $text=="home") {
 		$keyboard =[
 			["Mega-Projects","Legal"],
 			["Patents","High-School"],
@@ -84,17 +84,30 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Enjoy",$cid);
 	}
-	if ($text=="Grade-9") {
+	if ($text=="Grade-9" or $text=="Grade-10" or $text=="Grade-11" or $text=="Grade-12") {
 		$keyboard =[
-			["Grade-9","Grade-10"],
-			["Grade-11","Grade12"],
-			["test"],
+			["Text books","test"],
+			["back"],
 			["home"],
 		];
-		$key=array("resize_keyboard"=>false,
+		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Enjoy",$cid);
 	}
+	if ($text=="Text books") {
+		$keyboard =[
+			["Biology","Maths"],
+			["Physics","Civics"],
+			["home"],
+		];
+		$key=array("resize_keyboard"=>true,
+					"keyboard"=>$keyboard,);
+		keyboard($key,"Enjoy",$cid);
+	}
+	if ($text=="Biology" or $text=="Maths" or $text=="Physics" or $text=="Civics") {
+		send_document($cid);
+	}
+	
 	if ($text=="Stic-Resources") {
 		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
 		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
@@ -108,9 +121,6 @@
 	if($text=="final test"){
 		send_photo($cid);
 	}
-	else
-	{
-		send($cid,"you can say anything....");
-	}
+	
 
 ?>
