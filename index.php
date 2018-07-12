@@ -15,7 +15,9 @@
 	}
 	if($text =="Picture"){
 		send_photo($cid);
-		
+	}
+	if($text =="picture"){
+		send_photo1($cid);
 	}
 	if($text =="Pdf"){
 		send_document($cid);
@@ -40,7 +42,7 @@
 		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Legal") {
-		send_video($cid);
+		send_photo($cid);
 		send($cid,"Coming soon...");
 	}
 	if ($text=="back" or $text=="home") {
