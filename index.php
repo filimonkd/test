@@ -63,7 +63,7 @@
 		$keyboard =[
 			["Patent1","Patent2"],
 			["Patent3","Patent4"],
-			["back"],
+			["back"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
