@@ -38,7 +38,7 @@ function send_photo($id)
 }
 function send_document($id)
 {
-	return apiRequest("senddocument?chat_id=391941322&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
 }
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
