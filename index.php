@@ -14,10 +14,6 @@
 		keyboard($key,"Choose",$cid);
 		
 	}
-	if($text =="TVET"){
-		$but=array(array(array("text"=>"btn1","url"=>"http://library.stic.et/tvet/"),),);
-		inlinekeyboard($but,$cid,"click to navigate to the site");
-	}
 	if($text =="picture"){
 		send_photo($cid);
 	}
@@ -141,9 +137,9 @@
 		$but[]=array(array("text"=>"STIC Survey","url"=>"http://library.stic.et/stic-resources/-/document_library/Y9QR0tiVPdYe/view/711314?_com_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe_redirect=http%3A%2F%2Flibrary.stic.et%2Fstic-resources%3Fp_p_id%3Dcom_liferay_document_library_web_portlet_DLPortlet_INSTANCE_Y9QR0tiVPdYe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview"),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Inline4") {
+	if ($text=="TVET") {
 		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
-		inlinekeyboard($but,$cid,"click for google.com");
+		inlinekeyboard($but,$cid,"We only have one video click to recieve the video");
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
