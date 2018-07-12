@@ -42,20 +42,29 @@
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Choose",$cid);
 	}
-	if ($text=="construction" or $text=="construction_Governmental/Private") {
+	if ($text=="/construction" or $text=="construction_Governmental/Private") {
 		$but=array(array(array("text"=>"Condominum","url"=>"http://library.stic.et/mega-projects/-/categories/682324"),array("text"=>"Private","url"=>"http://library.stic.et/mega-projects/-/categories/682325"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Energy") {
-		$but[]=array(array("text"=>"btn1","url"=>"www.google.com"),);
-		$but[]=array(array("text"=>"btn2","url"=>"www.google.com"),);
-		inlinekeyboard($but,$cid,"click for google.com");
+	if ($text=="Energy" or $text=="/Energy") {
+		$but=array(array(array("text"=>"Click","callback_data"=>"energy"),),);
+		inlinekeyboard($but,$cid,"We only have one video click to recieve the video");
 	}
-	if ($text=="infrustracture") {
+	if (callback($update)) {
+		if ($cbdata=="energy") {
+			$but[]=array(array("text"=>"Ashegoda Adama","url"=>"www.google.com"),);
+			$but[]=array(array("text"=>"Finche","url"=>"www.google.com"),);
+			$but[]=array(array("text"=>"Gilgel Gibe","url"=>"www.google.com"),);
+			$but[]=array(array("text"=>"Tulu Mole","url"=>"www.google.com"),);
+			$but[]=array(array("text"=>"Geothermal","url"=>"www.google.com"),);
+			inlinekeyboard($but,$cid,"click for google.com");
+		}
+	}
+	if ($text=="infrustracture" or $text=="/infrustracture") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
-	if ($text=="Manufacturing-industries" or $text=="industries") {
+	if ($text=="Manufacturing-industries" or $text=="/industries") {
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
@@ -113,7 +122,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Text books") {
 		$keyboard =[
@@ -123,7 +132,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Biology" or $text=="Maths" or $text=="Physics" or $text=="Civics") {
 		send_document1($cid);
@@ -138,7 +147,7 @@
 		inlinekeyboard($but,$cid,"click for google.com");
 	}
 	if ($text=="TVET") {
-		$but=array(array(array("text"=>"btn1","callback_data"=>"ccccc"),),);
+		$but=array(array(array("text"=>"Click","callback_data"=>"ccccc"),),);
 		inlinekeyboard($but,$cid,"We only have one video click to recieve the video");
 	}
 	if (callback($update)) {
