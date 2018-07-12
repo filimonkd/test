@@ -7,11 +7,16 @@
 			["Mega-Projects","Legal"],
 			["Patents","High-School"],
 			["Stic-Resources"],
+			["TVET"],
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
 		keyboard($key,"Choose",$cid);
 		
+	}
+	if($text =="TVET"){
+		$but=array(array(array("text"=>"btn1","url"=>"http://library.stic.et/tvet/"),),);
+		inlinekeyboard($but,$cid,"click to navigate to the site");
 	}
 	if($text =="picture"){
 		send_photo($cid);
