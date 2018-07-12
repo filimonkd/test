@@ -1,5 +1,5 @@
 <?php
-	define('token','521684849:AAHvST9tExlgvd3G1ub18E-wOwVP-rV6v0k');
+	define('token','497240257:AAE06ZNux6rJutNrWnRZt09sABFgK2fMJhU');
 	include 'source.php';
 	if($text =="/start"){
 		 send($cid,"hey @$username $name $cogname,welcome  to Stic digital library's bot .....");
