@@ -86,7 +86,7 @@
 	}
 	if ($text=="Grade-9" or $text=="Grade-10" or $text=="Grade-11" or $text=="Grade-12") {
 		$keyboard =[
-			["Text books","test"],
+			["Text books","Lab Experiment Videos"],
 			["back"],
 			["home"],
 		];
@@ -106,6 +106,9 @@
 	}
 	if ($text=="Biology" or $text=="Maths" or $text=="Physics" or $text=="Civics") {
 		send_document($cid);
+	}
+	if ($text=="Lab Experiment Videos") {
+		send_photo($cid);
 	}
 	
 	if ($text=="Stic-Resources") {
