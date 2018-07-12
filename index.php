@@ -150,8 +150,8 @@
 			send($cid,"ftest");
 		}
 	}
-	if($text=="ftest"){
-		send_video($cid);
-	}
+// 	if($text=="ftest"){
+// 		send_video($cid);
+// 	}
 
 ?>
