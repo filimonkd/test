@@ -108,7 +108,7 @@
 		send_document($cid);
 	}
 	if ($text=="Lab Experiment Videos") {
-		send_photo($cid);
+		send_video($cid);
 	}
 	
 	if ($text=="Stic-Resources") {
