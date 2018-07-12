@@ -40,6 +40,10 @@ function send_document($id)
 {
 	return apiRequest("senddocument?chat_id=$id&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
 }
+function send_video($id)
+{
+	return apiRequest("sendvideo?chat_id=$id&video=BAADBAADwgMAAmPBOVLwHV44laDd0QI");
+}
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
 
