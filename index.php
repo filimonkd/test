@@ -70,7 +70,7 @@
 	}
 	if ($text=="Legal") {
 		send_photo($cid);
-		send($cid,"Coming soon...");
+		send($cid,"Nothing to show here yet...");
 	}
 	if ($text=="back" or $text=="home") {
 		$keyboard =[
