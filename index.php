@@ -13,10 +13,10 @@
 		keyboard($key,"Choose",$cid);
 		
 	}
-	if($text =="Picture"){
+	if($text =="picture"){
 		send_photo($cid);
 	}
-	if($text =="Picture "){
+	if($text =="Picture"){
 		send_photo1($cid);
 	}
 	if($text =="Pdf"){
@@ -67,7 +67,7 @@
 	}
 	if ($text=="Patent1" or $text=="Patent2" or $text=="Patent3" or $text=="Patent4") {
 		$keyboard =[
-			["Text","Picture "],
+			["Text","Picture"],
 			["Pdf"],
 			["back"],
 		];
@@ -84,7 +84,7 @@
 		];
 		$key=array("resize_keyboard"=>true,
 					"keyboard"=>$keyboard,);
-		keyboard($key,"Enjoy",$cid);
+		keyboard($key,"Choose",$cid);
 	}
 	if ($text=="Grade-9" or $text=="Grade-10" or $text=="Grade-11" or $text=="Grade-12") {
 		$keyboard =[
