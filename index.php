@@ -147,8 +147,11 @@
 	}
 	if (callback($update)) {
 		if ($cbdata=="ccccc") {
-			send_video($cid);
+			send($cid,"ftest");
 		}
+	}
+	if($text=="ftest"){
+		send_video($cid);
 	}
 
 ?>
