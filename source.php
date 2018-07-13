@@ -42,11 +42,11 @@ function send_photo1($id)
 }
 function send_document($id)
 {
-	return apiRequest("senddocument?chat_id=$id&document=BQADBAADawMAAlO2QFKki2VItBIL-AI");
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADcAMAAlO2QFJ3kzNG26rvawI");
 }
 function send_document1($id)
 {
-	return apiRequest("senddocument?chat_id=$id&document=BQADBAADawMAAlO2QFKki2VItBIL-AI");
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADcAMAAlO2QFJ3kzNG26rvawI");
 }
 function send_video($id)
 {
