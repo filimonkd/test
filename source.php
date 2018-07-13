@@ -34,11 +34,11 @@ function send($id,$text)
 }
 function send_photo($id)
 {
-	return apiRequest("sendphoto?chat_id=$id&photo=BQADBAADagMAAlO2QFL78U3YGfO6rQI");
+	return apiRequest("sendphoto?chat_id=$id&photo=BQADBAADeAMAAlO2QFIml9_znf0qeQI");
 }
 function send_photo1($id)
 {
-	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=AAQEABMw67saAASsqlxOK_YW3SYdAAIC");
+	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=BQADBAADdQMAAlO2QFJ-G2h3HJgHZAI");
 }
 function send_document($id)
 {
@@ -50,7 +50,7 @@ function send_document1($id)
 }
 function send_video($id)
 {
-	return apiRequest("sendvideo?chat_id=$id&video=AAQEABOL4KcaAAS-oapK8F-Ovto9AAIC");
+	return apiRequest("sendvideo?chat_id=$id&video=BAADBAADeQMAAlO2QFKJxP-eQ3bSVwI");
 }
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
