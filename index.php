@@ -17,7 +17,7 @@
 	if($text =="picture"){
 		send_photo($cid);
 	}
-	if($text =="Picture"){
+	if($text =="pic"){
 		send_photo1($cid);
 	}
 	if($text =="Pdf"){
@@ -68,7 +68,7 @@
 		$but=array(array(array("text"=>"btn1","url"=>"www.google.com"),),);
 		inlinekeyboard($but,$cid,"click to see the site.");
 	}
-	if ($text=="Legal") {
+	if ($text=="Legal" or $text=="Picture" or $text=="Text") {
 		send_photo($cid);
 		send($cid,"Nothing to show here yet...");
 	}
