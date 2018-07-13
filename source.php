@@ -34,23 +34,23 @@ function send($id,$text)
 }
 function send_photo($id)
 {
-	return apiRequest("sendphoto?chat_id=$id&photo=AgADBAADEa0xG2PBOVLKZVq8cUMessVHoBoABLSnDFqxJ5gpceYAAgI");
+	return apiRequest("sendphoto?chat_id=$id&photo=BQADBAADagMAAlO2QFL78U3YGfO6rQI");
 }
 function send_photo1($id)
 {
-	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=AgADBAADFq0xG2PBOVIEMOpN7GvpGmT3nhoABKDABQ6SVzjdEOwCAAEC");
+	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=AAQEABMw67saAASsqlxOK_YW3SYdAAIC");
 }
 function send_document($id)
 {
-	return apiRequest("senddocument?chat_id=$id&document=BQADBAADNwQAAkHFMVKKM88nse9k2AI");
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADawMAAlO2QFKki2VItBIL-AI");
 }
 function send_document1($id)
 {
-	return apiRequest("senddocument?chat_id=$id&document=BQADBAADyAMAAmPBOVJk9Ycn_5lEEwI");
+	return apiRequest("senddocument?chat_id=$id&document=BQADBAADawMAAlO2QFKki2VItBIL-AI");
 }
 function send_video($id)
 {
-	return apiRequest("sendvideo?chat_id=$id&video=BAADBAADwgMAAmPBOVLwHV44laDd0QI");
+	return apiRequest("sendvideo?chat_id=$id&video=AAQEABOL4KcaAAS-oapK8F-Ovto9AAIC");
 }
 function keyboard($tasti,$text,$cd){
 $tasti2=$tasti;
