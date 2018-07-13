@@ -34,11 +34,11 @@ function send($id,$text)
 }
 function send_photo($id)
 {
-	return apiRequest("sendphoto?chat_id=$id&photo=BQADBAADeAMAAlO2QFIml9_znf0qeQI");
+	return apiRequest("sendphoto?chat_id=$id&photo=BQADBAADagMAAlO2QFL78U3YGfO6rQI");
 }
 function send_photo1($id)
 {
-	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=BQADBAADdQMAAlO2QFJ-G2h3HJgHZAI");
+	return apiRequest("sendPhoto?text=$text&parse_mode=HTML&chat_id=$id&photo=AAQEABMw67saAASsqlxOK_YW3SYdAAIC");
 }
 function send_document($id)
 {
